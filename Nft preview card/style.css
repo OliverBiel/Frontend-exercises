@@ -1,0 +1,104 @@
+*{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main);
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: var(--Very-dark-blue-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 300px;
+    padding: 25px;
+}
+
+#equilibrium{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#price-box{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+#price{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+#data{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+
+#time-box{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+#line{
+    margin: 20px 0;
+    width: 300px;
+    border: 1px solid var(--Very-dark-blue-line);
+}
+
+#creator-box{
+    display: flex;
+    align-items: center;
+}
+
+#creator{
+    width: 8%;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 15px;
+}
+
+#author{
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#maintext{
+    line-height: 25px;
+}
+
+h1{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 20px 0px;
+}
+
+p{
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 18px;
+}
