@@ -4,4 +4,4 @@ This repository contains my frontend projects. Most of them will be challenges o
 
 
 ## How to acess the pages
-Jus enter this link: 
+Jus enter this [link](https://oliverbiel.github.io/Frontend-exercises/)
