@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>sigla</th>
+        <th>nome</th>
+    </tr>
+
+    <tr *ngFor="let estado of estados">
+        <td>
+            {{ estado.id }}
+        </td>
+        <td>
+            {{ estado.sigla }}
+        </td>
+        <td>
+            {{ estado.nome }}
+        </td>
+    </tr>
+</table>
+<button routerLink='add'>
+    Add
+</button>
