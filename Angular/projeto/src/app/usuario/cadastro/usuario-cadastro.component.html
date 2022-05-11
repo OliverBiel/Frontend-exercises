@@ -1,8 +1,15 @@
-<form>
-    <label>Nome</label>
-    <input type="text" name="nome" [(ngModel)]="usuario.nome">
-    
-    <label>Email</label>
-    <input type="email" name="email" [(ngModel)]="usuario.email">
-    <button (click)="salvar()">Salvar</button>
-</form>
+<div class="grid p-fluid">
+    <div class="col-12 md:col-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText [(ngModel)]="usuario.nome" placeholder="Nome">         
+        </div>
+    </div>
+    <div class="col-12 md:col-4">
+        <div class="p-inputgroup">
+            <input type="email" pInputText [(ngModel)]="usuario.email" placeholder="Email">         
+        </div>
+    </div>
+    <div>
+        <button pButton (click)="salvar()">Salvar</button>
+    </div>
+</div>

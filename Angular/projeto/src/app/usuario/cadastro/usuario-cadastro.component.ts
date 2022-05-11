@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/usuario';
+import { UsuarioService } from 'src/app/usuario.service';
 
 
 @Component({
@@ -10,13 +11,19 @@ import { Usuario } from 'src/app/usuario';
 export class UsuarioCadastroComponent implements OnInit {
 
   public usuario:Usuario = new Usuario()
-  constructor() { }
+  constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit(): void {
   }
 
   public salvar(){
-      console.log(this.usuario)
-      alert("Dados salvos")
+      this.usuarioService.salvar(this.usuario).subscribe(
+        response => {
+          alert("Dados salvos")
+        },
+        error => {
+          alert("Erro")
+        }
+      )
   }
 }
